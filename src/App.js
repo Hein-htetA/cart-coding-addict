@@ -3,18 +3,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DisplayCart from "./components/DisplayCart";
 import EmptyCart from "./components/EmptyCart";
 import SharedLayout from "./components/SharedLayout";
-import Total from "./components/Total";
+import { AppContextProvider } from "./Context";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<DisplayCart />} />
-          <Route path="emptycart" element={<EmptyCart />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <AppContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<DisplayCart />} />
+            <Route path="emptycart" element={<EmptyCart />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AppContextProvider>
   );
 };
 

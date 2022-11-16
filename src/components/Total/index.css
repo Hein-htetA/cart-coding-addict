@@ -1,13 +1,13 @@
 footer {
   background-color: rgb(233, 233, 252);
-  padding: 20px 0px;
+  padding-bottom: 40px;
 }
 .footer-container {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .footer-container p {
@@ -16,9 +16,9 @@ footer {
 }
 
 hr {
-  color: blue;
   max-width: 80vw;
   margin: 0px auto;
+  border-width: 2px;
 }
 
 .clear-button {
@@ -28,7 +28,6 @@ hr {
   letter-spacing: 2px;
   border-radius: 4px;
   padding: 10px 20px;
-  width: fit-content;
   margin: 0px auto;
   display: block;
 }

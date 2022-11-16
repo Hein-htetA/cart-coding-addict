@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Lucida Handwriting",Monaco,serif;
+  background-color: rgb(233, 233, 252);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,8 +1,10 @@
 import "./index.css";
 import React from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useAppContext } from "../../Context";
 
 const HeaderBar = () => {
+  const { totalCount } = useAppContext();
   return (
     <nav className="headerbar-wrapper">
       <div className="headerbar-container">
@@ -10,7 +12,7 @@ const HeaderBar = () => {
         <div className="icon-container">
           <ShoppingCartIcon fontSize="large" />
           <div className="icon-total-count-container">
-            <p className="total-text">5</p>
+            <p className="total-text">{totalCount}</p>
           </div>
         </div>
       </div>
